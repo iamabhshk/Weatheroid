@@ -1,0 +1,129 @@
+.section_left {
+  width: 100%;
+  display: flex;
+  color: var(--primary-color);
+  align-items: center;
+
+  @include change(phone) {
+    width: inherit;
+  }
+
+  &-info {
+    display: flex;
+    margin-top: 17rem;
+    margin-left: 8rem;
+    align-items: center;
+    flex: 0 0 85%;
+
+    @include change(tab-port) {
+      margin-left: 3rem;
+    }
+    @include change(tab-land) {
+      margin-left: 5rem;
+    }
+
+    @include change(phone) {
+      flex: 0 0 50%;
+      margin-left: 1rem;
+      display: flex;
+    }
+
+    &-temperature {
+      margin-right: 1.5rem;
+      flex: 0 0 10%;
+      font-size: 5.5rem;
+      font-weight: 400;
+
+      @include change(tab-port) {
+        font-size: 6.5rem;
+      }
+
+      @include change(tab-land) {
+        font-size: 6.5rem;
+      }
+
+      @include change(phone) {
+        margin-right: 2rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 6rem;
+      }
+    }
+
+    &-data {
+      display: flex;
+      flex-direction: column;
+      margin-right: 2rem;
+      flex: 0 0 50%;
+
+      @include change(tab-land) {
+        flex: 0 0 50%;
+        font-size: 2rem;
+      }
+
+      @include change(tab-port) {
+        flex: 0 0 50%;
+        font-size: 2rem;
+      }
+
+      @include change(phone) {
+        flex: 0 0 80%;
+      }
+
+      &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & h3 {
+          font-size: 3rem;
+          font-weight: 500;
+
+          @include change(tab-land) {
+            font-size: 4rem;
+          }
+
+          @include change(tab-port) {
+            font-size: 4rem;
+          }
+          @include change(phone) {
+            font-size: 4rem;
+          }
+        }
+      }
+      &-bottom {
+        display: flex;
+        flex: 0 0 100%;
+        justify-content: space-between;
+
+        & p {
+          font-size: 1rem;
+          font-weight: 600;
+          margin-right: 1rem;
+
+          @include change(phone) {
+            // margin-left: 4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.weatherCode {
+  flex: 0 0 20%;
+}
+.icon {
+  display: inline-block;
+  width: 3.5rem;
+  height: 4rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  color: var(--primary-color);
+  fill: currentColor;
+  &-search {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+  }
+}

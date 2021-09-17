@@ -1,0 +1,16 @@
+hr {
+  width: 20rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: 0.1px solid rgba(255, 255, 255, 0.295);
+  size: 10%;
+}
+
+table {
+  font-weight: 300;
+  & tr {
+    & td {
+      margin-bottom: 100px;
+    }
+  }
+}

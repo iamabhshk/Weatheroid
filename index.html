@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weatheroid - Search for any city and get the weather Details</title>
+    <link rel="icon" href="/Images/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="heading">Weatheroid</h1>
+      <div class="searchInputWrapper">
+        <input class="searchInput" id="searchInput"  type="text" placeholder='Enter a city'>
+        <button class="searchInputIcon" id="searchInputIcon"  >
+          <i class=" fa fa-search"></i>
+        </button>        
+        </input>
+      </div>      
+    </div>   
+
+    <div class="header">
+      <div class="section_left">        
+        <!-- <div class="section_left-info">          
+          <h1 class="section_left-info-temperature">26°</h1>
+          <div class="section_left-info-data">
+            <div class="section_left-info-data-top">
+              <h3>London</h3>
+              <svg class="icon icon-sun2">
+                <use xlink:href="/icomoon/sprite.svg#icon-sun2"></use>
+              </svg>
+            </div>
+            <div class="section_left-info-data-bottom">
+              <p>10:36 - Tuesday, 22 Oct '21</p>
+              <p class="weatherCode">Sunny</p>
+            </div>
+          </div>
+        </div> -->        
+      </div>
+      <div class="section_right">
+        <div class="section_right-search">
+          <input
+            type="text"
+            placeholder="Search Another Location"
+            id="searchCity"
+            class="searchCity"
+          />
+          <button class="searchButton">
+            <svg class="icon icon-search">
+              <use xlink:href="/icomoon/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <p class="section_right-details">Weather Details</p>
+        <div class="section_right-data">
+          <!-- <table style="width: 100%">
+            <tr>
+              <td height="40">Wind Speed</td>
+              <td height="40">26km/h</td>
+            </tr>
+            <tr>
+              <td height="40">Precipitation</td>
+              <td height="40">16%</td>
+            </tr>
+            <tr>
+              <td height="40">Relative Humidity</td>
+              <td height="40">23%</td>
+            </tr>
+            <tr>
+              <td height="40">Sealevel Pressure</td>
+              <td height="40">76paH</td>
+            </tr>
+            <tr>
+              <td height="40">Cloud Cover</td>
+              <td height="40">65%</td>
+            </tr>
+            <tr>
+              <td height="40">Freezing level height</td>
+              <td height="40">12m</td>
+            </tr>
+          </table> -->
+        </div>
+        <hr size="0%" class="lastline" />
+        <div class="contact">        
+          <div class="contact_link">         
+            <a href="https://www.linkedin.com/in/abhshkk/" target="_blank">
+              <svg class="icons icons-linkedin"><use xlink:href="/Images/contact/sprite.svg#icon-linkedin"></use></svg>
+            </a>
+            <a href="https://www.instagram.com/abhshkkk/" target="_blank">
+              <svg class="icons icons-instagram"><use xlink:href="/Images/contact/sprite.svg#icon-instagram"></use></svg>
+            </a>
+            <a href="https://github.com/iamabhshk" target="_blank">
+              <svg class="icons icons-github"><use xlink:href="/Images/contact/sprite.svg#icon-github"></use></svg>
+            </a>
+            <a href="https://abhisheksrinivasan.netlify.app/" target="_blank">
+              <svg class="icons icons-sphere"><use xlink:href="/Images/contact/sprite.svg#icon-sphere"></use></svg>
+            </a>
+          </div>             
+        </div> 
+      </div>
+    </div>
+  </body>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="iso.js"></script>
+</html>
