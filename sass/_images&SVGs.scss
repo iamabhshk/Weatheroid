@@ -44,6 +44,12 @@
   margin-top: 5.5rem;
   margin-left: 24rem;
 
+  @include change(phone) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &_link {
     & a {
       text-decoration: none;

@@ -18,7 +18,7 @@
   }
 
   @include change(phone) {
-    // height: 100%;
+    height: 100vh;
   }
 
   @include change(tab-port) {
@@ -56,7 +56,6 @@
   height: 3rem;
   padding: 0 1rem;
   border-radius: 2rem;
-
   border: none;
   transition: transform 0.1s ease-in-out;
   background-color: rgb(230, 230, 230);
@@ -85,7 +84,6 @@
   }
 }
 
-/* hide the placeholder text on focus */
 :focus::placeholder {
   text-indent: -999px;
 }

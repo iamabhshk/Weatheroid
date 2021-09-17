@@ -66,12 +66,10 @@ body {
   }
 
   @include change(phone) {
-    display: flex;
     flex: 0 0 100%;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 0;
-    width: 100%;
-    height: 144vh;
+    height: 100vh;
   }
 }

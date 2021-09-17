@@ -4,6 +4,10 @@ hr {
   margin-top: 1rem;
   color: 0.1px solid rgba(255, 255, 255, 0.295);
   size: 10%;
+
+  @include change(phone) {
+    width: 35rem;
+  }
 }
 
 table {

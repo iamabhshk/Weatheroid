@@ -18,7 +18,7 @@ const renderWeatherData = function (city, data) {
     }${data.hourly_units.temperature_2m[0]}</h1>
       <div class="section_left-info-data">
         <div class="section_left-info-data-top">
-          <h3>${city}</h3>
+          <h3>${capitalize(city)}</h3>
           <svg class="icon icon-${
             renderBackgroundImage(data.current_weather.weathercode)[1]
           }">
