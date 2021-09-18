@@ -7,6 +7,9 @@
   border-radius: 0.5rem;
   box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.705);
   background-image: linear-gradient(to right bottom, rgba(0, 217, 217, 0.5), rgba(0, 0, 0, 0.651)), url(/Images/homepageBGP.jpg); }
+  @media only screen and (max-width: 600px) {
+    .container {
+      height: 100vh; } }
 
 .heading {
   margin-bottom: 1.5rem;
@@ -55,7 +58,6 @@
     ::placeholder {
       font-size: 1.2rem; } }
 
-/* hide the placeholder text on focus */
 :focus::placeholder {
   text-indent: -999px; }
 
@@ -84,6 +86,9 @@ hr {
   margin-top: 1rem;
   color: 0.1px solid rgba(255, 255, 255, 0.295);
   size: 10%; }
+  @media only screen and (max-width: 600px) {
+    hr {
+      width: 35rem; } }
 
 table {
   font-weight: 300; }
@@ -113,8 +118,9 @@ table {
     @media only screen and (max-width: 600px) {
       .section_left-info {
         flex: 0 0 50%;
-        margin-left: 1rem;
-        display: flex; } }
+        margin-left: 8rem;
+        display: flex;
+        justify-content: center; } }
     .section_left-info-temperature {
       margin-right: 1.5rem;
       flex: 0 0 10%;
@@ -128,10 +134,9 @@ table {
           font-size: 6.5rem; } }
       @media only screen and (max-width: 600px) {
         .section_left-info-temperature {
-          margin-right: 2rem;
           justify-content: flex-start;
           align-items: flex-start;
-          font-size: 6rem; } }
+          font-size: 5rem; } }
     .section_left-info-data {
       display: flex;
       flex-direction: column;
@@ -163,15 +168,18 @@ table {
               font-size: 4rem; } }
           @media only screen and (max-width: 600px) {
             .section_left-info-data-top h3 {
-              font-size: 4rem; } }
+              font-size: 2rem; } }
       .section_left-info-data-bottom {
         display: flex;
         flex: 0 0 100%;
-        justify-content: space-between; }
+        justify-content: space-between;
+        align-items: center; }
         .section_left-info-data-bottom p {
           font-size: 1rem;
-          font-weight: 600;
-          margin-right: 1rem; }
+          font-weight: 600; }
+          @media only screen and (max-width: 600px) {
+            .section_left-info-data-bottom p {
+              font-size: 0.8rem; } }
 
 .weatherCode {
   flex: 0 0 20%; }
@@ -275,6 +283,11 @@ table {
 .contact {
   margin-top: 5.5rem;
   margin-left: 24rem; }
+  @media only screen and (max-width: 600px) {
+    .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
   .contact_link a {
     text-decoration: none; }
 
@@ -330,10 +343,8 @@ body {
       font-size: 1.3rem; } }
   @media only screen and (max-width: 600px) {
     .header {
-      display: flex;
       flex: 0 0 100%;
       flex-direction: column;
       justify-content: space-between;
       border-radius: 0;
-      width: 100%;
-      height: 144vh; } }
+      height: 100vh; } }

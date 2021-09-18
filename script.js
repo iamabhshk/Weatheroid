@@ -102,7 +102,7 @@ const renderBackgroundImage = function (code) {
     return ["Partly Cloudy", "cloudy2"];
   } else if (code == 3) {
     backgroundBGM.style.backgroundImage = `url("Images/Code_3.png")`;
-    document.body.style.backgroundColor = "rgb(0, 13, 49)";
+    document.body.style.backgroundColor = "rgb(95, 118, 143)";
     return ["Overcast", "cloud3"];
   } else if (code == 45) {
     backgroundBGM.style.backgroundImage = `url("Images/Code_45.jpg")`;

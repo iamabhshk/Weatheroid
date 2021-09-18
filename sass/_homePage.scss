@@ -14,7 +14,6 @@
     url(/Images/homepageBGP.jpg);
 
   @include change(tab-land) {
-    // height: 40vh;
   }
 
   @include change(phone) {
@@ -22,7 +21,6 @@
   }
 
   @include change(tab-port) {
-    // height: inherit;
   }
 }
 

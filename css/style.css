@@ -172,11 +172,11 @@ table {
       .section_left-info-data-bottom {
         display: flex;
         flex: 0 0 100%;
-        justify-content: space-between; }
+        justify-content: space-between;
+        align-items: center; }
         .section_left-info-data-bottom p {
           font-size: 1rem;
-          font-weight: 600;
-          margin-right: 1rem; }
+          font-weight: 600; }
           @media only screen and (max-width: 600px) {
             .section_left-info-data-bottom p {
               font-size: 0.8rem; } }
