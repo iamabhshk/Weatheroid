@@ -7,6 +7,8 @@ In this website you can find all the neccassary weather details of a particular 
 
 While working on this project I faced many bugs which made me learn new techniques of making a webite more user freindly. It also made me more aware of the functionality and probable bugs while working for future projects. 
 
+Do star this repositry if you liked the webiste :)
+
 Website: https://weatheroid.netlify.app/
 
 Github: https://github.com/iamabhshk/Weatheroid 
