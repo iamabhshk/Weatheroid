@@ -21,7 +21,7 @@
       <h1 class="heading">Weatheroid</h1>
       <div class="searchInputWrapper">
         <input class="searchInput" id="searchInput"  type="text" placeholder='Enter a city'>
-        <button class="searchInputIcon" id="searchInputIcon"  >
+        <button class="searchInputIcon" id="searchInputIcon" onclick="homebuttonsearch()" >
           <i class=" fa fa-search"></i>
         </button>        
         </input>
@@ -54,7 +54,7 @@
             id="searchCity"
             class="searchCity"
           />
-          <button class="searchButton">
+          <button class="searchButton" id="searchButton">
             <svg class="icon icon-search">
               <use xlink:href="/icomoon/sprite.svg#icon-search"></use>
             </svg>
@@ -110,6 +110,17 @@
       </div>
     </div>
   </body>
-  <script type="module" src="script.js"></script>
+  <script type="module" src="script.js">
+    document.getElementById("searchInput")
+    .addEventListener("keyup", function(e) {
+        if (e.keyCode === 13) {
+            document.getElementById("searchInputIcon").click();
+        }
+    });
+ 
+    document.getElementById("searchInputIcon").onclick = function() {
+      alert('You clicked an enter key!');
+    }
+  </script>
   <script type="module" src="iso.js"></script>
 </html>

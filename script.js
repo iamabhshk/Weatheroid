@@ -294,7 +294,16 @@ const weatherForecast = (async function () {
     let countryCount = 0;
     let searchCount = 0;
 
-    homeSearch.addEventListener("click", function () {
+    document
+      .getElementById("searchInput")
+      .addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.key === "Enter") {
+          document.getElementById("searchInputIcon").click();
+        }
+      });
+
+    document.getElementById("searchInputIcon").onclick = function () {
       home.style.display = "none";
       backgroundBGM.style.display = "flex";
       console.log(countryData);
@@ -368,9 +377,20 @@ const weatherForecast = (async function () {
           }
         }
       }
-    });
+    };
+
     //Main Data page
-    mainSearch.addEventListener("click", function () {
+
+    document
+      .getElementById("searchCity")
+      .addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.key === "Enter") {
+          document.getElementById("searchButton").click();
+        }
+      });
+
+    document.getElementById("searchButton").onclick = function () {
       searchCount++;
       console.log(searchCount);
       if (searchCount > 1) {
@@ -410,7 +430,6 @@ const weatherForecast = (async function () {
               }
             } else {
             }
-
             fetch(
               `https://api.open-meteo.com/v1/forecast?latitude=${countryData[i].latitude}&longitude=${countryData[i].longitude}&hourly=temperature_2m,relativehumitidy_2m,pressure_msl,precipitation,weathercode,cloudcover,windspeed_10m,freezinglevel_height&current_weather=true`
             )
@@ -475,6 +494,6 @@ const weatherForecast = (async function () {
           }
         }
       }
-    });
+    };
   } catch (err) {}
 })();
